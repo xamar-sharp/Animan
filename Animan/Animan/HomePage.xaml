@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Animan.HomePage" xmlns:markup="clr-namespace:Animan.MarkupExtensions">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Image Aspect="Fill" Source="{markup:Asset Direction=True}" HeightRequest="200" WidthRequest="200" VerticalOptions="FillAndExpand"/>
+            <Label x:Name="mainLabel" FontSize="60" HorizontalTextAlignment="Center"  Style="{markup:TimeOfYear 'Label'}"/>
+            <Frame x:Name="frame" CornerRadius="45" Padding="5" Style="{markup:TimeOfYear 'Frame'}" HeightRequest="200" VerticalOptions="FillAndExpand" WidthRequest="300" HorizontalOptions="CenterAndExpand">
+                <Editor AutoSize="TextChanges" Keyboard="Default" x:Name="cmd" Style="{markup:TimeOfYear 'Editor'}" Completed="cmd_Completed"/>
+            </Frame>
+            <Label x:Name="helpLink" Style="{markup:TimeOfYear Label}" TextDecorations="Underline" TextTransform="Uppercase" FontSize="Medium" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Image Aspect="Fill" HeightRequest="200" WidthRequest="200" VerticalOptions="FillAndExpand" Source="{markup:Asset Direction=False}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Animan.HelpPage" xmlns:markup="clr-namespace:Animan.MarkupExtensions">
+    <ContentPage.Content>
+        <CollectionView ItemsSource="{Binding Items}" SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout x:Name="main" Orientation="Horizontal" Spacing="5" Style="{markup:TimeOfYear Name='StackLayout'}">
+                        <Label x:Name="title" Text="{Binding Command}" FontSize="Medium" Style="{markup:TimeOfYear Label}"/>
+                        <BoxView HeightRequest="10000" WidthRequest="1" Color="Gray"/>
+                        <Label x:Name="desc" Text="{Binding Description}" FontSize="Medium" Style="{markup:TimeOfYear Label}"/>
+                        <BoxView HeightRequest="10000" WidthRequest="1" Color="Gray"/>
+                        <CollectionView x:Name="prop" ItemsSource="{Binding Properties}" SelectionMode="Single" WidthRequest="100" HorizontalOptions="EndAndExpand">
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout Orientation="Vertical"/>
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Label x:Name="pro" FontSize="Medium" Text="{Binding .}" Style="{markup:TimeOfYear Label}"/>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>
