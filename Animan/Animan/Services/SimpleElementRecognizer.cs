@@ -98,6 +98,38 @@ namespace Animan.Services
                         await App.ServiceLocator.EditorPropertyMapper.Map(ctx, editor, el);
                     }
                     break;
+                case "Activ":
+                    ActivityIndicator indi = new ActivityIndicator();
+                    ctx.Canvas.Children.Add(indi);
+                    foreach (var el in ctx.LastProperties.Keys.Select(key => key.ToUpper()))
+                    {
+                        await App.ServiceLocator.ActivityIndicatorPropertyMapper.Map(ctx, indi, el);
+                    }
+                    break;
+                case "Radio":
+                    RadioButton radio = new RadioButton();
+                    ctx.Canvas.Children.Add(radio);
+                    foreach (var el in ctx.LastProperties.Keys.Select(key => key.ToUpper()))
+                    {
+                        await App.ServiceLocator.RadioButtonPropertyMapper.Map(ctx, radio, el);
+                    }
+                    break;
+                case "Sw":
+                    Switch switcher = new Switch();
+                    ctx.Canvas.Children.Add(switcher);
+                    foreach (var el in ctx.LastProperties.Keys.Select(key => key.ToUpper()))
+                    {
+                        await App.ServiceLocator.SwitchPropertyMapper.Map(ctx, switcher, el);
+                    }
+                    break;
+                case "Web":
+                    WebView view = new WebView();
+                    ctx.Canvas.Children.Add(view);
+                    foreach (var el in ctx.LastProperties.Keys.Select(key => key.ToUpper()))
+                    {
+                        await App.ServiceLocator.WebViewPropertyMapper.Map(ctx, view, el);
+                    }
+                    break;
             }
         }
     }

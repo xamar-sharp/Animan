@@ -37,6 +37,10 @@ namespace Animan.Services
         public IPropertyMapper<Slider> SliderPropertyMapper { get; }
         public IPropertyMapper<Editor> EditorPropertyMapper { get; }
         public IPropertyMapper<Button> ButtonPropertyMapper { get; }
+        public IPropertyMapper<ActivityIndicator> ActivityIndicatorPropertyMapper { get; }
+        public IPropertyMapper<RadioButton> RadioButtonPropertyMapper { get; }
+        public IPropertyMapper<Switch> SwitchPropertyMapper { get; }
+        public IPropertyMapper<WebView> WebViewPropertyMapper { get; }
         public IElementRecognizer ElementRecognizer { get; }
         public HelpProvider HelpProvider { get; }
         public ServiceLocator()
@@ -69,6 +73,10 @@ namespace Animan.Services
             EntryPropertyMapper = new EntryPropertyMapper();
             EditorPropertyMapper = new EditorPropertyMapper();
             ButtonPropertyMapper = new ButtonPropertyMapper();
+            WebViewPropertyMapper = new WebViewPropertyMapper();
+            ActivityIndicatorPropertyMapper = new ActivityIndicatorPropertyMapper();
+            SwitchPropertyMapper = new SwitchPropertyMapper();
+            RadioButtonPropertyMapper = new RadioButtonPropertyMapper();
             ElementRecognizer = new SimpleElementRecognizer();
             HelpProvider = new HelpProvider(new HelpModel[]
             {

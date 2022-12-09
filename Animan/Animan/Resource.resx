@@ -145,7 +145,7 @@
     <value>DGR</value>
   </data>
   <data name="Email" xml:space="preserve">
-    <value>T</value>
+    <value>E</value>
   </data>
   <data name="End" xml:space="preserve">
     <value>E</value>
@@ -199,7 +199,7 @@
     <value>MO</value>
   </data>
   <data name="Numeric" xml:space="preserve">
-    <value>E</value>
+    <value>N</value>
   </data>
   <data name="Ok" xml:space="preserve">
     <value>OK</value>
@@ -226,13 +226,13 @@
     <value>SE</value>
   </data>
   <data name="Telephone" xml:space="preserve">
-    <value>C</value>
+    <value>T</value>
   </data>
   <data name="Text" xml:space="preserve">
-    <value>U</value>
+    <value>TEXT</value>
   </data>
   <data name="Url" xml:space="preserve">
-    <value />
+    <value>U</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>AniMan</value>

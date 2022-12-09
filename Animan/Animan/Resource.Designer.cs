@@ -142,7 +142,7 @@ namespace Animan {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на T.
+        ///   Ищет локализованную строку, похожую на E.
         /// </summary>
         internal static string Email {
             get {
@@ -304,7 +304,7 @@ namespace Animan {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на E.
+        ///   Ищет локализованную строку, похожую на N.
         /// </summary>
         internal static string Numeric {
             get {
@@ -385,7 +385,7 @@ namespace Animan {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на C.
+        ///   Ищет локализованную строку, похожую на T.
         /// </summary>
         internal static string Telephone {
             get {
@@ -394,7 +394,7 @@ namespace Animan {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на U.
+        ///   Ищет локализованную строку, похожую на TEXT.
         /// </summary>
         internal static string Text {
             get {
@@ -403,7 +403,7 @@ namespace Animan {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на U.
         /// </summary>
         internal static string Url {
             get {
