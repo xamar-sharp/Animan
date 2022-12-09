@@ -8,11 +8,21 @@ namespace Animan.Services
     {
         public ImageSource Format(string raw)
         {
-            if (Uri.IsWellFormedUriString(raw,UriKind.Absolute))
+            if (raw.Contains("://"))
             {
                 return ImageSource.FromUri(new Uri(raw));
             }
-            return ImageSource.FromFile(raw);
+            byte[] bytes;
+            try
+            {
+                bool res = System.IO.File.Exists(raw);
+                bytes = System.IO.File.ReadAllBytes(raw);
+            }
+            catch(Exception ex)
+            {
+                bytes = null;
+            }
+            return ImageSource.FromStream(() => new System.IO.MemoryStream(bytes));
         }
     }
 }

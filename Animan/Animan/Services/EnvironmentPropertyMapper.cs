@@ -15,6 +15,9 @@ namespace Animan.Services
                 case "BC":
                     layout.BackgroundColor = App.ServiceLocator.ColorMapper.Format(raw);
                     break;
+                case "B":
+                    layout.Background = App.ServiceLocator.LinearGradientMapper.Format(raw);
+                    break;
                 case "NBC":
                     ctx.MainPage.BarBackgroundColor = App.ServiceLocator.ColorMapper.Format(raw);
                     break;

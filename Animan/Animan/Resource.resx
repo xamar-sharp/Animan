@@ -132,6 +132,9 @@
   <data name="CenterAndExpand" xml:space="preserve">
     <value>CE</value>
   </data>
+  <data name="Chat" xml:space="preserve">
+    <value>N</value>
+  </data>
   <data name="CornflowerBlue" xml:space="preserve">
     <value>CB</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="DimGray" xml:space="preserve">
     <value>DGR</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>T</value>
   </data>
   <data name="End" xml:space="preserve">
     <value>E</value>
@@ -192,6 +198,9 @@
   <data name="MediumOrchid" xml:space="preserve">
     <value>MO</value>
   </data>
+  <data name="Numeric" xml:space="preserve">
+    <value>E</value>
+  </data>
   <data name="Ok" xml:space="preserve">
     <value>OK</value>
   </data>
@@ -200,6 +209,9 @@
   </data>
   <data name="OrangeRed" xml:space="preserve">
     <value>OR</value>
+  </data>
+  <data name="Plain" xml:space="preserve">
+    <value>P</value>
   </data>
   <data name="Purple" xml:space="preserve">
     <value>P</value>
@@ -212,6 +224,15 @@
   </data>
   <data name="StartAndExpand" xml:space="preserve">
     <value>SE</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>U</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value />
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>AniMan</value>

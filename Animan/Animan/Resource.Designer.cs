@@ -106,6 +106,15 @@ namespace Animan {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на N.
+        /// </summary>
+        internal static string Chat {
+            get {
+                return ResourceManager.GetString("Chat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на CB.
         /// </summary>
         internal static string CornflowerBlue {
@@ -129,6 +138,15 @@ namespace Animan {
         internal static string DimGray {
             get {
                 return ResourceManager.GetString("DimGray", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на T.
+        /// </summary>
+        internal static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
             }
         }
         
@@ -286,6 +304,15 @@ namespace Animan {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на E.
+        /// </summary>
+        internal static string Numeric {
+            get {
+                return ResourceManager.GetString("Numeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на OK.
         /// </summary>
         internal static string Ok {
@@ -309,6 +336,15 @@ namespace Animan {
         internal static string OrangeRed {
             get {
                 return ResourceManager.GetString("OrangeRed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на P.
+        /// </summary>
+        internal static string Plain {
+            get {
+                return ResourceManager.GetString("Plain", resourceCulture);
             }
         }
         
@@ -345,6 +381,33 @@ namespace Animan {
         internal static string StartAndExpand {
             get {
                 return ResourceManager.GetString("StartAndExpand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на C.
+        /// </summary>
+        internal static string Telephone {
+            get {
+                return ResourceManager.GetString("Telephone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на U.
+        /// </summary>
+        internal static string Text {
+            get {
+                return ResourceManager.GetString("Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Url {
+            get {
+                return ResourceManager.GetString("Url", resourceCulture);
             }
         }
         

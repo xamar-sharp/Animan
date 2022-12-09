@@ -8,6 +8,7 @@ namespace Animan.Services
     {
         public double Format(string raw)
         {
+            raw = raw.Replace("D", ",");
             return Convert.ToDouble(raw);
         }
     }

@@ -19,7 +19,8 @@ namespace Animan.Services
             brush.EndPoint = new Point(1, 0);
             for (int x = 0; x < seps.Length; x++)
             {
-                brush.GradientStops.Add(new GradientStop() { Offset = Convert.ToSingle((x + 1) / seps.Length), Color = _colorMapper.Format(seps[x]) });
+                var val = Convert.ToSingle((x) / (double)seps.Length);
+                brush.GradientStops.Add(new GradientStop() { Offset = val, Color = _colorMapper.Format(seps[x]) });
             }
             return brush;
         }

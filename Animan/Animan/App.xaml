@@ -13,7 +13,7 @@
                 <Setter Property="FontSize" Value="Large"/>
             </Style>
             <Style x:Key="DayWinterLabel" TargetType="Label">
-                <Setter Property="TextColor" Value="Blue"/>
+                <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="Large"/>
             </Style>
             <Style x:Key="NightWinterLabel" TargetType="Label">
@@ -29,11 +29,11 @@
                 <Setter Property="FontSize" Value="Large"/>
             </Style>
             <Style x:Key="DaySummerLabel" TargetType="Label">
-                <Setter Property="TextColor" Value="DeepSkyBlue"/>
+                <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="Large"/>
             </Style>
             <Style x:Key="NightSummerLabel" TargetType="Label">
-                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="TextColor" Value="Green"/>
                 <Setter Property="FontSize" Value="Large"/>
             </Style>
             <Style x:Key="NightAutumnStackLayout" TargetType="StackLayout">
@@ -55,10 +55,10 @@
                 <Setter Property="BackgroundColor" Value="SpringGreen"/>
             </Style>
             <Style x:Key="NightSummerStackLayout" TargetType="StackLayout">
-                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="BackgroundColor" Value="Blue"/>
             </Style>
             <Style x:Key="DaySummerStackLayout" TargetType="StackLayout">
-                <Setter Property="BackgroundColor" Value="Gold"/>
+                <Setter Property="BackgroundColor" Value="Blue"/>
             </Style>
             <Style x:Key="NightAutumnContentPage" TargetType="ContentPage">
                 <Setter Property="BackgroundColor" Value="DarkOrange"/>
@@ -79,10 +79,10 @@
                 <Setter Property="BackgroundColor" Value="SpringGreen"/>
             </Style>
             <Style x:Key="NightSummerContentPage" TargetType="ContentPage">
-                <Setter Property="BackgroundColor" Value="Green"/>
+                <Setter Property="BackgroundColor" Value="Blue"/>
             </Style>
             <Style x:Key="DaySummerContentPage" TargetType="ContentPage">
-                <Setter Property="BackgroundColor" Value="Gold"/>
+                <Setter Property="BackgroundColor" Value="Blue"/>
             </Style>
             <Style x:Key="NightAutumnFrame" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="OrangeRed"/>
@@ -94,13 +94,13 @@
                 <Setter Property="BackgroundColor" Value="LimeGreen"/>
             </Style>
             <Style x:Key="DaySpringFrame" TargetType="Frame">
-                <Setter Property="BackgroundColor" Value="LightSeaGreen"/>
+                <Setter Property="BackgroundColor" Value="SeaGreen"/>
             </Style>
             <Style x:Key="NightSummerFrame" TargetType="Frame">
-                <Setter Property="BackgroundColor" Value="DeepSkyBlue"/>
+                <Setter Property="BackgroundColor" Value="ForestGreen"/>
             </Style>
             <Style x:Key="DaySummerFrame" TargetType="Frame">
-                <Setter Property="BackgroundColor" Value="Goldenrod"/>
+                <Setter Property="BackgroundColor" Value="Yellow"/>
             </Style>
             <Style x:Key="NightWinterFrame" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="CornflowerBlue"/>
@@ -124,7 +124,7 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="PlaceholderColor" Value="DimGray"/>
             </Style>
-            <Style x:Key="NightSummerEdtor" TargetType="Editor">
+            <Style x:Key="NightSummerEditor" TargetType="Editor">
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="PlaceholderColor" Value="DimGray"/>
             </Style>
@@ -153,16 +153,16 @@
                 <Setter Property="BarBackgroundColor" Value="LimeGreen"/>
             </Style>
             <Style x:Key="DaySpringNavigationPage" TargetType="NavigationPage">
-                <Setter Property="BarTextColor" Value="Black"/>
+                <Setter Property="BarTextColor" Value="MediumSpringGreen"/>
                 <Setter Property="BarBackgroundColor" Value="LightSeaGreen"/>
             </Style>
             <Style x:Key="NightSummerNavigationPage" TargetType="NavigationPage">
-                <Setter Property="BarTextColor" Value="CornflowerBlue"/>
-                <Setter Property="BarBackgroundColor" Value="Goldenrod"/>
+                <Setter Property="BarTextColor" Value="Black"/>
+                <Setter Property="BarBackgroundColor" Value="ForestGreen"/>
             </Style>
             <Style x:Key="DaySummerNavigationPage" TargetType="NavigationPage">
                 <Setter Property="BarTextColor" Value="White"/>
-                <Setter Property="BarBackgroundColor" Value="LightBlue"/>
+                <Setter Property="BarBackgroundColor" Value="Green"/>
             </Style>
             <Style x:Key="NightWinterNavigationPage" TargetType="NavigationPage">
                 <Setter Property="BarTextColor" Value="Black"/>

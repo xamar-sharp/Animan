@@ -22,6 +22,7 @@ namespace Animan.Services
                 case "FS":
                     if (raw.StartsWith("N'"))
                     {
+                        raw = raw.Substring(2);
                         label.FontSize = Device.GetNamedSize(App.ServiceLocator.NamedSizeMapper.Format(raw),typeof(Label));
                     }
                     else
@@ -30,7 +31,8 @@ namespace Animan.Services
                     }
                     break;
                 case "SL":
-                    await label.RelScaleTo(App.ServiceLocator.DoubleFormatter.Format(raw));
+                    double value = App.ServiceLocator.DoubleFormatter.Format(raw);
+                    bool res = await label.RelScaleTo(value);
                     break;
                 case "BC":
                     label.BackgroundColor = App.ServiceLocator.ColorMapper.Format(raw);
